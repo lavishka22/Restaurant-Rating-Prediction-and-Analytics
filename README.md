@@ -1,232 +1,356 @@
-# Restaurant Rating Prediction & Analytics
+# 🍽️ Restaurant Rating Prediction & Business Analytics
 
-A machine learning project that predicts restaurant ratings with high accuracy using Python, EDA, feature engineering, and advanced data visualization techniques. Achieved **R² = 0.971** on the prediction model.
+> An end-to-end Data Science and Machine Learning project that analyzes restaurant data, uncovers business insights, performs feature engineering, and predicts restaurant ratings using multiple regression models.
 
----
-
-## 📋 Table of Contents
-
-- [Overview](#overview)
-- [Features](#features)
-- [Installation](#installation)
-- [Project Structure](#project-structure)
-- [Dataset](#dataset)
-- [Model Performance](#model-performance)
-- [Usage](#usage)
-- [Results & Insights](#results--insights)
-- [Contributing](#contributing)
-- [License](#license)
+![Python](https://img.shields.io/badge/Python-3.10-blue?logo=python)
+![Pandas](https://img.shields.io/badge/Pandas-Data%20Analysis-150458?logo=pandas)
+![NumPy](https://img.shields.io/badge/NumPy-Numerical%20Computing-013243?logo=numpy)
+![Scikit-Learn](https://img.shields.io/badge/Scikit--Learn-Machine%20Learning-F7931E?logo=scikitlearn)
+![Matplotlib](https://img.shields.io/badge/Matplotlib-Visualization-blue)
+![Seaborn](https://img.shields.io/badge/Seaborn-Statistical%20Visualization-4C72B0)
+![Folium](https://img.shields.io/badge/Folium-Geospatial-green)
 
 ---
 
-## 🎯 Overview
+# 📌 Project Overview
 
-This project leverages machine learning and data science techniques to predict restaurant ratings based on various features. Through comprehensive exploratory data analysis (EDA) and feature engineering, we built a high-performing predictive model that can help understand key factors influencing restaurant ratings.
+Restaurant businesses generate large amounts of operational and customer feedback data. Understanding customer behavior, restaurant services, pricing, and cuisine popularity can help restaurants improve customer satisfaction and optimize business strategies.
 
-**Key Achievement:** R² Score of **0.971** indicating excellent model fit and prediction accuracy.
+This project performs a complete **Data Science workflow**, including:
 
----
+- Data Cleaning
+- Exploratory Data Analysis (EDA)
+- Geospatial Analysis
+- Feature Engineering
+- Customer Preference Analysis
+- Machine Learning
+- Business Insights
+- Advanced Data Visualization
 
-## ✨ Features
-
-- **Exploratory Data Analysis (EDA)** – Comprehensive statistical and visual analysis of restaurant data
-- **Feature Engineering** – Creation and transformation of features to improve model performance
-- **Multiple ML Models** – Testing and comparison of various algorithms
-- **Data Visualization** – Interactive and publication-ready visualizations
-- **High Accuracy** – R² = 0.971 demonstrating excellent predictive capability
-- **Scalable Pipeline** – Reproducible and modular code structure
-
----
-
-## 🚀 Installation
-
-### Prerequisites
-- Python 3.8 or higher
-- pip or conda package manager
-
-### Steps
-
-1. **Clone the repository:**
-   ```bash
-   git clone https://github.com/lavishka22/Restaurant-Rating-Prediction-and-Analytics.git
-   cd Restaurant-Rating-Prediction-and-Analytics
-   ```
-
-2. **Create a virtual environment (recommended):**
-   ```bash
-   python -m venv venv
-   source venv/bin/activate  # On Windows: venv\Scripts\activate
-   ```
-
-3. **Install dependencies:**
-   ```bash
-   pip install -r requirements.txt
-   ```
+Finally, three regression models were trained to predict restaurant aggregate ratings.
 
 ---
 
-## 📁 Project Structure
+# 🎯 Objectives
 
-```
+- Clean and preprocess restaurant data.
+- Explore customer behavior through visual analytics.
+- Analyze restaurant distribution across countries and cities.
+- Perform feature engineering for machine learning.
+- Train multiple regression models.
+- Compare model performance.
+- Generate actionable business insights.
+
+---
+
+# 📂 Dataset Information
+
+**Dataset Size:** 9,551 Restaurants
+
+### Key Features
+
+- Restaurant Name
+- Country
+- City
+- Locality
+- Cuisines
+- Average Cost for Two
+- Price Range
+- Aggregate Rating
+- Rating Color
+- Rating Text
+- Votes
+- Has Table Booking
+- Has Online Delivery
+- Latitude
+- Longitude
+
+Target Variable:
+
+**Aggregate Rating**
+
+---
+
+# 🛠️ Technologies Used
+
+| Category | Tools |
+|----------|-------|
+| Programming | Python |
+| Data Analysis | Pandas, NumPy |
+| Visualization | Matplotlib, Seaborn |
+| Machine Learning | Scikit-learn |
+| Geospatial Analysis | Folium |
+| Development | Jupyter Notebook, Google Colab |
+
+---
+
+# 📁 Project Structure
+
+```text
 Restaurant-Rating-Prediction-and-Analytics/
-├── data/                      # Dataset files
-│   ├── raw/                   # Original data
-│   └── processed/             # Cleaned data
-├── notebooks/                 # Jupyter notebooks
-│   ├── 01_eda.ipynb          # Exploratory Data Analysis
-│   ├── 02_feature_engineering.ipynb
-│   └── 03_modeling.ipynb     # Model training & evaluation
-├── src/                       # Source code
-│   ├── preprocessing.py      # Data cleaning functions
-│   ├── feature_engineering.py # Feature creation
-│   ├── models.py             # ML model implementations
-│   └── visualization.py      # Plotting utilities
-├── results/                   # Output results
-│   ├── models/               # Trained model files
-│   └── plots/                # Generated visualizations
-├── requirements.txt          # Python dependencies
-├── README.md                 # This file
-└── LICENSE                   # MIT License
+│
+├── Dataset/
+│   ├── Dataset.csv
+│   ├── Cleaned_Dataset.csv
+│   └── Feature_Engineered_Dataset.csv
+│
+├── Notebooks/
+│   ├── Level_1/
+│   ├── Level_2/
+│   └── Level_3/
+│
+├── Images/
+│
+├── Report/
+│
+├── README.md
+├── requirements.txt
+├── LICENSE
+└── .gitignore
 ```
 
 ---
 
-## 📊 Dataset
+# 🔄 Project Workflow
 
-- **Source:** [Specify your data source]
-- **Records:** [Number of samples]
-- **Features:** [Total number of features]
-- **Target Variable:** Restaurant Rating
-
-### Key Features Include:
-- Restaurant location and type
-- Cuisine type(s)
-- Price range
-- Service quality metrics
-- Amenities and facilities
-- Customer reviews & feedback
-- [Add other relevant features]
+```text
+Dataset
+    │
+    ▼
+Data Cleaning
+    │
+    ▼
+Exploratory Data Analysis
+    │
+    ▼
+Geospatial Analysis
+    │
+    ▼
+Feature Engineering
+    │
+    ▼
+Machine Learning
+    │
+    ▼
+Model Evaluation
+    │
+    ▼
+Business Insights
+```
 
 ---
 
-## 🤖 Model Performance
+# 📊 Exploratory Data Analysis
 
-### Models Tested
+Performed:
+
+- Missing Value Analysis
+- Descriptive Statistics
+- Country-wise Restaurant Distribution
+- City-wise Restaurant Distribution
+- Cuisine Analysis
+- Price Range Analysis
+- Table Booking Analysis
+- Online Delivery Analysis
+
+---
+
+# 🌍 Geospatial Analysis
+
+Interactive restaurant visualization was created using **Folium**.
+
+### Features
+
+- Interactive Map
+- Marker Clustering
+- Restaurant Details Popup
+- Country Mapping
+
+📷
+
+![Geospatial Map](Images/Geospatial_Map.png)
+
+---
+
+# ⚙️ Feature Engineering
+
+Created multiple engineered features including:
+
+- Restaurant Name Length
+- Address Length
+- Cuisine Count
+- Table Booking Encoding
+- Online Delivery Encoding
+- Delivering Now Encoding
+- Rating Status
+- High Rated Restaurant
+- Cost Per Person
+- Log Votes
+- Price Category
+- Cost Category
+
+---
+
+# 🤖 Machine Learning Models
+
+The following regression algorithms were trained:
+
 - Linear Regression
-- Random Forest
-- Gradient Boosting
-- Support Vector Machines (SVM)
-- Neural Networks
-
-### Best Model Performance Metrics
-
-| Metric | Score |
-|--------|-------|
-| **R² Score** | **0.971** |
-| RMSE (Root Mean Squared Error) | [Value] |
-| MAE (Mean Absolute Error) | [Value] |
-| Cross-Validation Score | [Value] |
-
-### Performance Comparison
-[Include a visualization or table comparing all models tested]
+- Decision Tree Regressor
+- Random Forest Regressor
 
 ---
 
-## 💻 Usage
+# 📈 Model Performance
 
-### Basic Prediction Example
+| Model | MAE | RMSE | R² Score |
+|---------|---------|---------|---------|
+| Linear Regression | 0.200 | 0.279 | 0.966 |
+| Decision Tree | 0.233 | 0.372 | 0.939 |
+| Random Forest | **0.169** | **0.255** | **0.971** |
 
-```python
-from src.models import load_model, preprocess_features
+🏆 **Best Model:** Random Forest Regressor
 
-# Load the trained model
-model = load_model('results/models/best_model.pkl')
+---
 
-# Prepare restaurant features
-features = {
-    'location': 'Downtown',
-    'cuisine_type': 'Italian',
-    'price_range': 3,
-    'seating_capacity': 120,
-    # ... other features
-}
+# 📷 Model Comparison
 
-# Predict rating
-predicted_rating = model.predict([preprocess_features(features)])
-print(f"Predicted Rating: {predicted_rating[0]:.2f}")
-```
+![Model Comparison](Images/Model_Comparison.png)
 
-### Running the Full Pipeline
+---
+
+# ⭐ Feature Importance
+
+The Random Forest model identified the most influential features for predicting restaurant ratings.
+
+![Feature Importance](Images/Feature_Importance.png)
+
+---
+
+# 📉 Actual vs Predicted Ratings
+
+The Random Forest model demonstrated excellent predictive performance.
+
+![Prediction](Images/Actual_vs_Predicted.png)
+
+---
+
+# 🍽️ Customer Preference Analysis
+
+The project analyzed:
+
+- Most Popular Cuisines
+- Highest Rated Cuisines
+- Most Voted Restaurants
+- Customer Satisfaction
+- Online Delivery Preferences
+- Table Booking Preferences
+
+![Customer Preference](Images/Customer_Preference.png)
+
+---
+
+# 📊 Data Visualization
+
+The project includes:
+
+- Histograms
+- Scatter Plots
+- Bubble Charts
+- Correlation Heatmap
+- Pair Plot
+- Violin Plot
+- Box Plot
+- Count Plot
+
+![Correlation Heatmap](Images/Correlation_Heatmap.png)
+
+---
+
+# 💡 Key Business Insights
+
+- Budget restaurants dominate the dataset.
+- Restaurants with online delivery generally receive higher ratings.
+- Table booking is associated with better customer satisfaction.
+- Customer votes positively correlate with restaurant popularity.
+- Random Forest achieved outstanding prediction accuracy (R² = 0.971).
+- Feature engineering significantly improved predictive performance.
+
+---
+
+# 🚀 Future Scope
+
+- Hyperparameter Optimization
+- Deep Learning Models
+- Restaurant Recommendation System
+- Real-Time API Integration
+- Streamlit Dashboard
+- Power BI Dashboard
+- Cloud Deployment
+
+---
+
+# ▶️ Installation
+
+Clone the repository
 
 ```bash
-# Run EDA
-jupyter notebook notebooks/01_eda.ipynb
+git clone https://github.com/your-username/Restaurant-Rating-Prediction-and-Analytics.git
+```
 
-# Feature Engineering
-jupyter notebook notebooks/02_feature_engineering.ipynb
+Move to project folder
 
-# Model Training & Evaluation
-jupyter notebook notebooks/03_modeling.ipynb
+```bash
+cd Restaurant-Rating-Prediction-and-Analytics
+```
+
+Install dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+Launch Jupyter Notebook
+
+```bash
+jupyter notebook
 ```
 
 ---
 
-## 📈 Results & Insights
+# 📚 Requirements
 
-### Key Findings from EDA
-- [Insight 1: Most important factor affecting ratings]
-- [Insight 2: Distribution patterns]
-- [Insight 3: Correlation discoveries]
-
-### Feature Importance
-The top 5 most important features for prediction:
-1. [Feature 1] – [Importance %]
-2. [Feature 2] – [Importance %]
-3. [Feature 3] – [Importance %]
-4. [Feature 4] – [Importance %]
-5. [Feature 5] – [Importance %]
-
-### Visualizations
-- Distribution of restaurant ratings
-- Feature correlations heatmap
-- Model prediction accuracy plots
-- Residual analysis
-- Feature importance rankings
+```
+numpy
+pandas
+matplotlib
+seaborn
+scikit-learn
+folium
+jupyter
+notebook
+```
 
 ---
 
-## 🤝 Contributing
+# 👩‍💻 Author
 
-Contributions are welcome! To contribute:
+**Lavishka Bhardwaj**
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/improvement`)
-3. Commit your changes (`git commit -m 'Add improvement'`)
-4. Push to the branch (`git push origin feature/improvement`)
-5. Open a Pull Request
+B.Tech – Artificial Intelligence & Data Science
 
-Please ensure your code follows PEP 8 style guidelines and includes appropriate documentation.
+GitHub: https://github.com/lavishka22
+
+LinkedIn: *(Add your LinkedIn profile URL here)*
 
 ---
 
-## 📝 License
+# ⭐ Support
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
-
----
-
-## 👤 Author
-
-**lavishka22**  
-GitHub: [@lavishka22](https://github.com/lavishka22)
+If you found this project helpful, consider giving it a ⭐ on GitHub!
 
 ---
 
-## 🙏 Acknowledgments
+# 📄 License
 
-- Thanks to [data source/contributors]
-- Inspired by [relevant projects/papers]
-
----
-
-**Last Updated:** July 2026
+This project is licensed under the **MIT License**.
