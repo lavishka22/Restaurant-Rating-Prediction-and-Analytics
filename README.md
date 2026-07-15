@@ -25,7 +25,6 @@
 - [Machine Learning Models](#-machine-learning-models)
 - [Model Performance](#-model-performance)
 - [Business Insights](#-business-insights)
-- [Screenshots](#-screenshots)
 - [Future Scope](#-future-scope)
 - [Author](#-author)
 - [License](#-license)
@@ -676,9 +675,7 @@ Your support helps motivate further improvements and future open-source projects
 
 ### Connect with me
 
-📧 Email: *your-email@example.com*
-
-💼 LinkedIn: https://www.linkedin.com/in/YOUR-LINKEDIN/
+📧 Email: lavishkabhardwaj376@gmail.com
 
 🐙 GitHub: https://github.com/lavishka22
 
